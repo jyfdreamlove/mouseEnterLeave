@@ -1,0 +1,221 @@
+@w:300px;
+@h:150px;
+
+.list{
+	width:700px;
+	height:350px;
+	margin:200px auto;
+	li{
+		width:@w;
+		height:@h;
+		box-sizing: border-box;
+		border:1px solid #cccccc;
+		background: #ffffff;
+		float: left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		overflow: hidden;
+		.mask{
+			width:100%;
+			height:100%;
+			position:absolute;
+			top:-@h;
+			left:0;
+			background:#f00;
+			
+		}
+	}
+	.in-top .mask{
+		animation:intop 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes intop {
+		0% {
+			top:-@h;
+			left:0;
+		}
+		100%{
+			top:0px;
+			left:0;
+		}
+	}
+	@keyframes intop {
+		0% {
+			top:-@h;
+			left:0;
+		}
+		100%{
+			top:0px;
+			left:0;
+		}
+	}
+	.out-top .mask{
+		animation:outtop 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes outtop {
+		0% {
+			top:0px;
+			left:0;
+		}
+		100%{
+			top:-@h;
+			left:0;
+		}
+	}
+	@keyframes outtop {
+		0% {
+			top:0px;
+			left:0;
+		}
+		100%{
+			top:-@h;
+			left:0;
+		}
+	}
+	.in-left .mask{
+		animation:inleft 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes inleft {
+		0% {
+			top:0px;
+			left:-@w;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	@keyframes inleft {
+		0% {
+			top:0px;
+			left:-@w;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	.out-left .mask{
+		animation:outleft 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes outleft {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:-@w;
+		}
+	}
+	@keyframes outleft {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:-@w;
+		}
+	}
+	.in-right .mask{
+		animation:inright 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes inright {
+		0% {
+			top:0px;
+			left:@w;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	@keyframes inright {
+		0% {
+			top:0px;
+			left:@w;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	.out-right .mask{
+		animation:outright 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes outright {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:@w;
+		}
+	}
+	@keyframes outright {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:@w;
+		}
+	}
+	.in-bottom .mask{
+		animation:inbottom 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes inbottom {
+		0% {
+			top:@h;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	@keyframes inbottom {
+		0% {
+			top:@h;
+			left:0px;
+		}
+		100%{
+			top:0px;
+			left:0px;
+		}
+	}
+	.out-bottom .mask{
+		animation:outbottom 0.3s 1; 
+		animation-fill-mode:both;
+	}
+	@-webkit-keyframes outbottom {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:@h;
+			left:0px;
+		}
+	}
+	@keyframes outbottom {
+		0% {
+			top:0px;
+			left:0px;
+		}
+		100%{
+			top:@h;
+			left:0px;
+		}
+	} 
+}
